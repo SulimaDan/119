@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.article {
+    flex: 3;
+    padding: 20px;
+}
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-left: 1px solid #ccc;
+}
+@media (max-width: 800px) {
+    .content {
+        flex-direction: column;
+    }
+    .sidebar {
+        border-left: none;
+        border-top: 1px solid #ccc;
+    }
+}
